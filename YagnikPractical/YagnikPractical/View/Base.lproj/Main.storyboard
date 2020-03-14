@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jmk-KB-dRf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jmk-KB-dRf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="612" width="414" height="250"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zom-kK-Qwk">
-                                        <rect key="frame" x="25" y="67" width="364" height="88"/>
+                                        <rect key="frame" x="25" y="66" width="364" height="88"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  ID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zft-Dk-9Ri">
                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="40"/>
@@ -32,7 +32,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3CH-oz-l2o">
                                                 <rect key="frame" x="0.0" y="48" width="364" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -44,7 +44,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <state key="normal" title="LOGIN">
-                                            <color key="titleColor" red="0.88697630169999997" green="0.88710099460000003" blue="0.88693696259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="LoginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yEC-ht-RYB"/>
@@ -54,30 +54,31 @@
                                 <constraints>
                                     <constraint firstItem="Zom-kK-Qwk" firstAttribute="leading" secondItem="VNu-5G-Aux" secondAttribute="leading" constant="25" id="272-ul-rwE"/>
                                     <constraint firstItem="Y6w-w7-kAg" firstAttribute="leading" secondItem="VNu-5G-Aux" secondAttribute="leading" constant="25" id="3Ru-J2-q4p"/>
-                                    <constraint firstItem="Y6w-w7-kAg" firstAttribute="top" secondItem="Zom-kK-Qwk" secondAttribute="bottom" constant="25" id="DCE-ae-p43"/>
+                                    <constraint firstItem="Y6w-w7-kAg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Zom-kK-Qwk" secondAttribute="bottom" constant="25" id="DCE-ae-p43"/>
                                     <constraint firstAttribute="trailing" secondItem="Y6w-w7-kAg" secondAttribute="trailing" constant="25" id="ECy-iU-HpW"/>
                                     <constraint firstAttribute="bottom" secondItem="Y6w-w7-kAg" secondAttribute="bottom" constant="25" id="Lgd-IO-RJy"/>
                                     <constraint firstAttribute="trailing" secondItem="Zom-kK-Qwk" secondAttribute="trailing" constant="25" id="NTf-K2-RcJ"/>
+                                    <constraint firstItem="Zom-kK-Qwk" firstAttribute="top" secondItem="VNu-5G-Aux" secondAttribute="top" constant="66" id="clm-X7-ttV"/>
                                     <constraint firstAttribute="height" constant="250" id="ifC-tO-G2Q"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Mobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbF-S6-jdv">
-                                <rect key="frame" x="96" y="298.5" width="222" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="117.5" y="301.5" width="179" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69469713184931503" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fuz-pY-8M6">
-                                <rect key="frame" x="99" y="199.5" width="216" height="84"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="92" y="201.5" width="230.5" height="90"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="75"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="0.60054580479452058" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="XbF-S6-jdv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DJQ-pG-rx5"/>
-                            <constraint firstItem="XbF-S6-jdv" firstAttribute="top" secondItem="Fuz-pY-8M6" secondAttribute="bottom" constant="15" id="GQa-SM-e6D"/>
+                            <constraint firstItem="XbF-S6-jdv" firstAttribute="top" secondItem="Fuz-pY-8M6" secondAttribute="bottom" constant="10" id="GQa-SM-e6D"/>
                             <constraint firstItem="VNu-5G-Aux" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JXa-xV-EmT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VNu-5G-Aux" secondAttribute="bottom" id="SUx-lA-NLD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VNu-5G-Aux" secondAttribute="trailing" id="hFg-76-8X6"/>

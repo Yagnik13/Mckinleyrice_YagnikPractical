@@ -1,9 +1,9 @@
 //
 //  BTReachabilityManager.swift
-//  uClinic
+//  YagnikPractical
 //
-//  Created by Viral Shah on 21/05/18.
-//  Copyright © 2018 Viral Shah. All rights reserved.
+//  Created by Yagnik Suthar on 14/03/20.
+//  Copyright © 2020 Yagnik Suthar. All rights reserved.
 //
 
 import Foundation

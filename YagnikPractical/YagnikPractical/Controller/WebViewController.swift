@@ -18,6 +18,12 @@ class WebViewController: UIViewController {
     var urlToLoad: String = "https://mckinleyrice.com?token="
     var token: String = ""
     
+    lazy var logoutBarButton: UIBarButtonItem = {
+        let barButton = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutButtonAction(sender:)))
+        barButton.tintColor = .red
+        return barButton
+    }()
+    
     //MARK:- View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +34,9 @@ class WebViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        self.navigationItem.rightBarButtonItem = logoutBarButton
+        
         if IS_INTERNET_AVAILABLE() {
             if let url = URL(string: urlToLoad + token) {
                 let urlRequest = URLRequest(url: url)
@@ -37,6 +46,12 @@ class WebViewController: UIViewController {
         }else {
             showAlertWithTitleFromVC(vc: self, andMessage: "Please check your internet connection, Please try again later")
         }
+    }
+    
+    @objc func logoutButtonAction(sender: UIBarButtonItem) {
+        USER_DEFAULT.set(nil, forKey: kToken)
+        USER_DEFAULT.synchronize()
+        self.dismiss(animated: true, completion: nil)
     }
 }
 

@@ -22,14 +22,6 @@ func IS_INTERNET_AVAILABLE() -> Bool {
     return BTReachabilityManager.shared.isInternetAvailableForAllNetworks()
 }
 
-
-extension UIApplication {
-    /// Dismiss keyboard from key window.
-    public static func endEditing(_ force: Bool = false) {
-        shared.keyWindow?.endEditing(force)
-    }
-}
-
 extension UIButton {
     
     func setCornerRadiusWithShadow(radius: CGFloat = 0, opacity: Float = 0, offSet: CGSize = CGSize(width: 0.0, height: 0.0), color: UIColor = .black, cornerRadius: CGFloat = 0.0) {
@@ -41,32 +33,4 @@ extension UIButton {
         self.layer.shadowOpacity = opacity
         self.layer.shadowRadius = radius
     }
-}
-
-extension CALayer {
-    func addBorder(edge: UIRectEdge, color: UIColor, thickness: CGFloat) {
-        let border = CALayer();
-        
-        switch edge {
-        case UIRectEdge.top:
-            border.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: thickness)
-            break
-        case UIRectEdge.bottom:
-            border.frame = CGRect(x:0, y:self.frame.height - thickness, width:self.frame.width, height:thickness)
-            break
-        case UIRectEdge.left:
-            border.frame = CGRect(x:0, y:0, width: thickness, height: self.frame.height)
-            break
-        case UIRectEdge.right:
-            border.frame = CGRect(x:self.frame.width - thickness, y: 0, width: thickness, height:self.frame.height)
-            break
-        default:
-            break
-        }
-        
-        border.backgroundColor = color.cgColor;
-        
-        self.addSublayer(border)
-    }
-    
 }

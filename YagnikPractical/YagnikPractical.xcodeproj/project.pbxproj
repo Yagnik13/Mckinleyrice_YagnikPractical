@@ -162,7 +162,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 342CEFD5241B4E280019B457 /* Build configuration list for PBXNativeTarget "YagnikPractical" */;
 			buildPhases = (
-				162E3FD122D63A22006D902C /* [CP] Build Pods Frameworks */,
 				61DBABD9AD0968A14C8AFAEC /* [CP] Check Pods Manifest.lock */,
 				342CEFBA241B4E260019B457 /* Sources */,
 				342CEFBB241B4E260019B457 /* Frameworks */,
@@ -225,24 +224,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		162E3FD122D63A22006D902C /* [CP] Build Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Build Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cat \"${PROJECT_FILE_PATH}/frameworks.sh\" | bash";
-		};
 		61DBABD9AD0968A14C8AFAEC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -446,7 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 975EF4L676;
-				INFOPLIST_FILE = YagnikPractical/Info.plist;
+				INFOPLIST_FILE = /Users/yagniksuthar/Documents/GitHub/Mckinleyrice_YagnikPractical/YagnikPractical/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,7 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 975EF4L676;
-				INFOPLIST_FILE = YagnikPractical/Info.plist;
+				INFOPLIST_FILE = /Users/yagniksuthar/Documents/GitHub/Mckinleyrice_YagnikPractical/YagnikPractical/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

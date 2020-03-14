@@ -38,14 +38,19 @@ class ViewController: UIViewController {
     //MARK:- Custom Methods
     private func setupUI() {
         emailTextField.layer.borderWidth = 1
-        emailTextField.layer.borderColor = UIColor.lightGray.cgColor
+        emailTextField.layer.borderColor = UIColor.lightGray.withAlphaComponent(0.5).cgColor
         emailTextField.layer.masksToBounds = true
         
         passwordTextField.layer.borderWidth = 1
-        passwordTextField.layer.borderColor = UIColor.lightGray.cgColor
+        passwordTextField.layer.borderColor = UIColor.lightGray.withAlphaComponent(0.5).cgColor
         passwordTextField.layer.masksToBounds = true
-        
-        loginButton.setCornerRadiusWithShadow(radius: 8, opacity: 0.15, offSet: CGSize(width: 0, height: 4), color: UIColor.black.withAlphaComponent(0.5), cornerRadius: 8)
+                
+        loginButton.layer.shadowColor = UIColor.lightGray.withAlphaComponent(0.5).cgColor
+        loginButton.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        loginButton.layer.shadowOpacity = 1.0
+        loginButton.layer.shadowRadius = 0.0
+        loginButton.layer.masksToBounds = false
+        loginButton.layer.cornerRadius = 4.0
     }
     
     private func isValid() ->Bool {
@@ -79,7 +84,9 @@ class ViewController: UIViewController {
                     if let token = responseData["token"] as? String {
                         USER_DEFAULT.set(token, forKey: kToken)
                         USER_DEFAULT.synchronize()
-                        self.openWebViewController(tokenValue: token)
+                        DispatchQueue.main.async {
+                            self.openWebViewController(tokenValue: token)
+                        }
                     }
                 }
             }
