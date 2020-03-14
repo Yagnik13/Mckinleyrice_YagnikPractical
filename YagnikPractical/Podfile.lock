@@ -1,0 +1,26 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.4)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - ReachabilitySwift (4.3.1)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - NVActivityIndicatorView
+  - ReachabilitySwift (~> 4.3.1)
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - NVActivityIndicatorView
+    - ReachabilitySwift
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
+
+PODFILE CHECKSUM: 05c306cef3fc77c70024ca75379adbcd44f9a95a
+
+COCOAPODS: 1.8.4
